@@ -103,6 +103,7 @@
 		B82784841D46FFF20046782B = {
 			isa = PBXGroup;
 			children = (
+				B82784D31D4706080046782B /* libWeiboSDK */,
 				B827848F1D46FFF20046782B /* YeWB */,
 				B82784A91D46FFF20046782B /* YeWBTests */,
 				B82784B41D46FFF20046782B /* YeWBUITests */,
@@ -162,6 +163,13 @@
 				B82784B71D46FFF20046782B /* Info.plist */,
 			);
 			path = YeWBUITests;
+			sourceTree = "<group>";
+		};
+		B82784D31D4706080046782B /* libWeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libWeiboSDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
