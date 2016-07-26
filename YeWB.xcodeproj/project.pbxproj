@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABA54B60BB2F69B6DD15C853 /* libPods-YeWB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8683D9FB154D53A362D835D9 /* libPods-YeWB.a */; };
 		B82784921D46FFF20046782B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B82784911D46FFF20046782B /* main.m */; };
 		B82784951D46FFF20046782B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B82784941D46FFF20046782B /* AppDelegate.m */; };
 		B82784981D46FFF20046782B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B82784971D46FFF20046782B /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0613577DB13D84291F2C3330 /* Pods-YeWB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeWB.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeWB/Pods-YeWB.release.xcconfig"; sourceTree = "<group>"; };
+		8683D9FB154D53A362D835D9 /* libPods-YeWB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YeWB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B827848D1D46FFF20046782B /* YeWB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeWB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82784911D46FFF20046782B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B82784931D46FFF20046782B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		B82784B11D46FFF20046782B /* YeWBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeWBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B82784B51D46FFF20046782B /* YeWBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YeWBUITests.m; sourceTree = "<group>"; };
 		B82784B71D46FFF20046782B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB98488700294388445677B9 /* Pods-YeWB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeWB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeWB/Pods-YeWB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABA54B60BB2F69B6DD15C853 /* libPods-YeWB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6730C076E05DD5F7AD1B796D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB98488700294388445677B9 /* Pods-YeWB.debug.xcconfig */,
+				0613577DB13D84291F2C3330 /* Pods-YeWB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F4A6F0B2A216A56440DF644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8683D9FB154D53A362D835D9 /* libPods-YeWB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B82784841D46FFF20046782B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				B82784A91D46FFF20046782B /* YeWBTests */,
 				B82784B41D46FFF20046782B /* YeWBUITests */,
 				B827848E1D46FFF20046782B /* Products */,
+				6730C076E05DD5F7AD1B796D /* Pods */,
+				8F4A6F0B2A216A56440DF644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B82784BA1D46FFF20046782B /* Build configuration list for PBXNativeTarget "YeWB" */;
 			buildPhases = (
+				5324ADE6D604E7A35D874C74 /* Check Pods Manifest.lock */,
 				B82784891D46FFF20046782B /* Sources */,
 				B827848A1D46FFF20046782B /* Frameworks */,
 				B827848B1D46FFF20046782B /* Resources */,
+				1B89FDDE9ABD17442B5ADF12 /* Embed Pods Frameworks */,
+				6F836C54CF53E95EB85B1268 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B89FDDE9ABD17442B5ADF12 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeWB/Pods-YeWB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5324ADE6D604E7A35D874C74 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F836C54CF53E95EB85B1268 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeWB/Pods-YeWB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B82784891D46FFF20046782B /* Sources */ = {
@@ -409,6 +484,7 @@
 		};
 		B82784BB1D46FFF20046782B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB98488700294388445677B9 /* Pods-YeWB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YeWB/Info.plist;
@@ -420,6 +496,7 @@
 		};
 		B82784BC1D46FFF20046782B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0613577DB13D84291F2C3330 /* Pods-YeWB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YeWB/Info.plist;
@@ -496,6 +573,7 @@
 				B82784BC1D46FFF20046782B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82784BD1D46FFF20046782B /* Build configuration list for PBXNativeTarget "YeWBTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +582,7 @@
 				B82784BF1D46FFF20046782B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B82784C01D46FFF20046782B /* Build configuration list for PBXNativeTarget "YeWBUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +591,7 @@
 				B82784C21D46FFF20046782B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,9 @@
+target ‘YeWB’ do
+	pod ‘ReactiveCocoa’,’2.5’
+	pod ‘MBProgressHUD’
+	pod ‘Masonry’
+	pod ‘AFNetworking’
+	pod ‘SDWebImage’
+	pod ‘YYModel’
+	pod ‘MJRefresh’
+end
